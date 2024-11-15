@@ -3,7 +3,7 @@
 #Python Quiz Game
 
 
-#Function to ask a single question
+# Function to ask a single question
 def ask_question(question,answer):
     user_answer = input(question + "  ")
     if user_answer.lower() == answer.lower():
@@ -11,7 +11,7 @@ def ask_question(question,answer):
     else:
         return False 
     
-#Function to run the quiz 
+# Function to run the quiz 
 def run_quiz():
     questions = [
         ('What is the fastest land animal?','cheetah'),
@@ -20,7 +20,7 @@ def run_quiz():
         ('How many Great Lakes are there?','5')
     ]
 
-    #loop through the questions and ask each one 
+    # loop through the questions and ask each one 
 
     score = 0 
     for q in questions: 
@@ -36,11 +36,11 @@ def run_quiz():
     print(f'You Scored: {percentage:.1f}%')
     print('Goodbye!')
 
-#main function to start the game 
+# main function to start the game 
 def main():
     print('Welcome to my Python Quiz Game!')
     run_quiz()
 
-#start the game 
+# start the game 
 if __name__ == "__main__":
     main()
